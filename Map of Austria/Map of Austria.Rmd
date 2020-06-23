@@ -1,0 +1,26 @@
+---
+title: "Interactive Map of Austria"
+author: "Daniel"
+date: "22 6 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+```
+
+## Map of Austria
+
+This interactive map highlights the biggest cities of Austria. The circle size depends on the population.
+
+```{r ATmap}
+library(leaflet)
+ATmap <- data.frame(lat = c(48.210033, 46.635700, 47.811195, 47.076668, 47.259659, 48.30694, 48.20353, 47.84637, 47.50075), 
+                 lng = c(16.363449, 14.311817, 13.033229, 15.421371, 11.400375, 14.285830000000033, 15.63817, 16.52796, 9.74231), 
+                 pop = c(1897491, 100817, 154211, 288806, 132110, 205726, 55044, 14637, 29698),
+                 name = c("Vienna", "Klagenfurt", "Salzburg", "Graz", "Innsbruck", "Linz", "St. Pölten", "Eisenstadt", "Bregenz"))
+ATmap %>%
+        leaflet() %>%
+        addTiles() %>%
+        addCircles(weight = 1, radius = sqrt(ATmap$pop)*30, lng = ATmap$lng, lat = ATmap$lat, label = paste(ATmap$name, ATmap$pop, sep = ", "))
+```
