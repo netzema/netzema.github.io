@@ -15,15 +15,13 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<style>
 		.intro h1:before {
-			/* Edit this with your name or anything else */
 			content: 'NETZL';
 		}
 
-		#typed {
-			min-height: 2.8em; /* Adjust height based on font size */
-			white-space: nowrap;
+		.typed-container {
+			display: inline-block;
+			min-height: 2.5em; /* Ensures space for wrapping */
 		}
-
 	</style>
 </head>
 <body>
@@ -56,7 +54,9 @@
 					<img src="img/ava.jpg" alt="Avatar">
 				</div>
 				<div class="unit-80">
-					<h1>You can call me<br><span id="typed"></span></h1>
+					<h1>You can call me<br>
+						<span class="typed-container"><span id="typed"></span></span>
+					</h1>					
 				</div>
 				<p>
 					I love building intelligent systems - almost as much as I love questioning them. As a data scientist and AI researcher, I work at the intersection of technology and ethics, ensuring that progress isn't just fast but meaningful. I enjoy tackling complex problems, making sense of messy data, and exploring how AI shapes society. I believe that not everything should be optimized just because it can be, and I'm here to challenge the idea that technology alone defines progress.
