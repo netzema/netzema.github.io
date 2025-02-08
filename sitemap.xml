@@ -6,11 +6,33 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://danielnetzl.com/</loc>
   <lastmod>2025-02-08T09:05:48+00:00</lastmod>
 </url>
-
+<url>
+  <loc>https://danielnetzl.com/#about</loc>
+  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
+</url>
+<url>
+  <loc>https://danielnetzl.com/#education</loc>
+  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
+</url>
+<url>
+  <loc>https://danielnetzl.com/#experience</loc>
+  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
+</url>
+<url>
+  <loc>https://danielnetzl.com/#projects</loc>
+  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
+</url>
+<url>
+  <loc>https://danielnetzl.com/#community</loc>
+  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
+</url>
+<url>
+  <loc>https://danielnetzl.com/#test_scores</loc>
+  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
+</url>
 
 </urlset>
