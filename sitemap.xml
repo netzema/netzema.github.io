@@ -30,5 +30,35 @@
   <loc>https://danielnetzl.com/#community</loc>
   <lastmod>2025-02-08T09:05:48+00:00</lastmod>
 </url>
+<url>
+  <loc>https://danielnetzl.com/#essays</loc>
+  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://danielnetzl.com/</loc>
+  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://danielnetzl.com/essays/myth_of_progress.html</loc>
+  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://danielnetzl.com/essays/inequalities_in_ai_development.html</loc>
+  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://danielnetzl.com/essays/rethinking_progress.html</loc>
+  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://danielnetzl.com/index.html</loc>
+  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
 </urlset>
