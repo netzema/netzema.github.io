@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>Essays by Daniel Netzl</title>
+    <link>https://danielnetzl.com</link>
+    <description>Essays on AI, society, limits, and rethinking progress.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Apr 2025 12:00:00 +0000</lastBuildDate>
+
+    <item>
+        <title>Why We Accept a Life We Constantly Need a Break From</title>
+        <link>https://danielnetzl.com/essays/bars_of_our_cage/</link>
+        <description>A provocative look at why modern life is structured around exhaustion and escape.</description>
+        <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+        <title>Lost in the Scroll: How Algorithms Quietly Control What We Think and Want</title>
+        <link>https://danielnetzl.com/essays/addictive_algorithms/</link>
+        <description>An essay on the dark psychology of algorithmic media and its impact on autonomy.</description>
+        <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+        <title>The Lost Ark and the Illusion of Obligatory Technology</title>
+        <link>https://danielnetzl.com/essays/the_lost_ark/</link>
+        <description>Why society treats technology like destiny - and what that says about our fears.</description>
+        <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+        <title>Racing Toward Collapse: How Our Fear of Limits Drives Us Off A Cliff</title>
+        <link>https://danielnetzl.com/essays/fear_of_limits/</link>
+        <description>Our cultural rejection of limits is accelerating collapse. Can we stop the race?</description>
+        <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+        <title>A World Too Much: Finding Common Ground in a Fractured Political Landscape</title>
+        <link>https://danielnetzl.com/essays/a_world_too_much/</link>
+        <description>Where far-left and far-right frustrations meet - and how we might build a new story.</description>
+        <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+        <title>The Myth of Progress: How Technology Became Our Defining Narrative</title>
+        <link>https://danielnetzl.com/essays/myth_of_progress/</link>
+        <description>Why technological progress became a religion and what alternatives exist.</description>
+        <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+        <title>AI and the Uneven Scales of Progress: Inequalities in Development</title>
+        <link>https://danielnetzl.com/essays/inequalities_in_ai_development/</link>
+        <description>How AI fuels global inequality and deepens environmental injustice.</description>
+        <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+        <title>Rethinking Progress in the Age of AI: A Call for Ethical Technology</title>
+        <link>https://danielnetzl.com/essays/rethinking_progress/</link>
+        <description>A call to reimagine AI's purpose around human well-being and planetary boundaries.</description>
+        <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+    </item>
+</channel>
+</rss>
