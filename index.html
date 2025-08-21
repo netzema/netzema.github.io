@@ -407,5 +407,25 @@
 
 		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
     </script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const buttons = document.querySelectorAll('#project-filters button');
+			const items = document.querySelectorAll('.filter-item');
+
+			buttons.forEach(button => {
+			button.addEventListener('click', () => {
+				// Handle active state
+				buttons.forEach(btn => btn.classList.remove('active'));
+				button.classList.add('active');
+
+				const filter = button.getAttribute('data-filter');
+				items.forEach(item => {
+				const show = filter === 'all' || item.classList.contains(filter);
+				item.style.display = show ? 'list-item' : 'none';
+				});
+			});
+			});
+		});
+	</script>
 </body>
 </html>

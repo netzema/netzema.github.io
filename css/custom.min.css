@@ -44,3 +44,24 @@ figcaption {
   color: #333;
   background-color: #f4f4f4;
 }
+
+#project-filters button {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  color: #4e4e4e;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 12px;
+  margin: 4px 4px 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#project-filters button:hover,
+#project-filters button.active {
+  background-color: #e6e6e6;
+  color: #333;
+  border-color: #4e4e4e;
+  box-shadow: inset 0 0 0 1px #b3b3b3;
+}
