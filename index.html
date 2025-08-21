@@ -71,7 +71,7 @@
 					My work combines hands-on machine learning with a critical lens: How is AI shaping society? Who benefits? Who is left out? I explore these questions through research, community work, and public writing. My mission is to make AI more transparent, more just and more aligned with the limits of our planet.
 				</p>
 				</p>
-				<a href="downloads/Daniel_Netzl_CV.pdf" class="btn-cv" target="_blank" download>
+				<a href="downloads/Daniel_Netzl_CV.pdf" class="btn-cv" title="View GitHub Repo" target="_blank" download>
 					Download CV
 				</a>
 			</div>
@@ -176,7 +176,7 @@
 			<h1>Talks &<br>Presentations</h1>
 			<ul class="work-list">
 				<li>Apr. 2025</li>
-				<li><a href="https://www.youtube.com/watch?v=6tS3LvjW8Iw" target="_blank">
+				<li><a href="https://www.youtube.com/watch?v=6tS3LvjW8Iw" title="View GitHub Repo" target="_blank">
 					AI and Social Justice - Talk at SAINT 2025, FH St. Pölten</a></li>
 				<li>
 					<p>
@@ -209,72 +209,105 @@
 			</ul>
 		</div>
 	</div>
-
 	<!-- Projects -->
 	<div class="skills section second" id="projects">
 	<div class="container">
 		<h1>Projects &<br>Skills</h1>
 
+		<!-- Filter Buttons -->
+		<div id="project-filters" style="margin-bottom: 30px;">
+		<button data-filter="all">All</button>
+		<button data-filter="infra">Infrastructure</button>
+		<button data-filter="bio">Bio/Health</button>
+		<button data-filter="xai">Explainability</button>
+		<button data-filter="rl">Reinforcement Learning</button>
+		<button data-filter="ml">Applied ML</button>
+		</div>
+
 		<h2>Featured Projects</h2>
 		<ul class="project-list featured">
-		<li>
-			<strong><a href="https://github.com/netzema/ticketing_system" target="_blank">Ticketing System</a></strong><br>
-			<em>QR Code Infrastructure | Flask, ReportLab, SQLite, Nginx</em><br>
-			Secure event ticketing system generating and validating QR-coded tickets via browser-based scanning.
+		<li class="filter-item infra ml">
+		<strong><a href="https://github.com/netzema/ticketing_system" title="View GitHub Repo" target="_blank">Ticketing System</a></strong><br>
+		<em>QR Code Infrastructure | Flask, ReportLab, SQLite, Nginx</em><br>
+		Designed and deployed a full-stack ticketing system with secure QR generation, HTTPS validation, and browser-based live scanning. Includes offline fallback, modular event config, and real-world use in high-volume entry management.
 		</li>
-		<li>
-			<strong><a href="https://github.com/netzema/Retrosynthesis-with-Fine-Tuned-Transformer-Models" target="_blank">Retrosynthesis Prediction</a></strong><br>
+		<li class="filter-item infra ml xai">
+			<strong>Audio Anomaly Detection System</strong><br>
+			<em>End-to-End Pipeline | CNN, Cloud Infra, Saliency Maps, Dash</em><br>
+			Fully automated audio monitoring system: collects microphone data, converts audio to images, runs CNN anomaly detection with model explainability, and alerts subscribers via live Dash web interface and automated email notifications.
+		</li>
+		<li class="filter-item bio ml">
+			<strong><a href="https://github.com/netzema/Retrosynthesis-with-Fine-Tuned-Transformer-Models" title="View GitHub Repo" target="_blank">Retrosynthesis Prediction</a></strong><br>
 			<em>Seq2Seq Modeling | Transformer, ReactionT5, Fine-Tuning</em><br>
 			Fine-tuned a chemical language model to predict reactants from product SMILES in single-step retrosynthesis.
 		</li>
-		<li>
-			<strong><a href="https://github.com/netzema/Protein-Binding-Site-Prediction" target="_blank">Protein Binding Site Prediction</a></strong><br>
-			<em>Classification | P2Rank, XGBoost, LightGBM, DBSCANg</em><br>
-			Feature-based ensemble model to predict binding residues in proteins, outperforming structure-only baselines.
-		</li>
-		<li>
-			<strong><a href="https://github.com/netzema/QSAR" target="_blank">Bioactivity Prediction</a></strong><br>
-			<em>QSAR | RDKit, Feature Engineering, Scaffold CV, Model Ensembling</em><br>
-			Multi-task pipeline to predict molecular activity from SMILES using fingerprints and ensembles.
-		</li>
-		<li>
-			<strong><a href="https://github.com/netzema/Deep-Reinforcement-Learning-for-Doom" target="_blank">Deep Reinforcement Learning for FPS</a></strong><br>
+		<li class="filter-item rl">
+			<strong><a href="https://github.com/netzema/Deep-Reinforcement-Learning-for-Doom" title="View GitHub Repo" target="_blank">Deep Reinforcement Learning for FPS</a></strong><br>
 			<em>Combat Strategy Learning | Dueling DQN, VizDoom, Custom Rewards</em><br>
 			Trained an agent in Doom with movement-augmented rewards and depth-aware Q-learning.
 		</li>
-		<li><strong>Model Interpretability</a></strong><br><em>Explainable AI (XAI) | Latent space analysis, interactive Dash visualization</em><br>Model Explanations for a Deep Feature Consistent Variational Autoencoder (DFC-VAE)</li>
-		<li><strong>Climate Pattern Detection</a></strong><br><em>Unsupervised learning | UMAP, t-SNE, NASA POWER API, ReliefWeb API</em><br>AI Visualization of Latent Space to Detect Worldwide Weather Clusters and Patterns</li>
+		<li class="filter-item ml infra xai">
+			<strong>Industrial Configuration Recommender</strong><br>
+			<em>Multi-Label Classification | Random Forest, Neural Networks, Postprocessing Pipelines</em><br>
+			Built a scalable recommendation system for medical device configurations. Optimized preprocessing and postprocessing to handle sparse high-dimensional data for reliable, explainable, and fast predictions in real-world industrial settings.
+		</li>
 		</ul>
 
 		<h2>Other Projects</h2>
 		<ul class="project-list compact">
-		<li>
-			<strong><a href="https://github.com/netzema/Molecular-Generation-from-SMILES" target="_blank">Molecular Generation</a></strong><br>
-			<em>Generative Modeling | LSTM, SMILES, Fréchet ChemNet Distance</em><br>
-			Autoregressive LSTM model trained on SMILES to generate valid, unique, and novel molecules.
+		<li class="filter-item bio ml">
+			<strong><a href="https://github.com/netzema/QSAR" title="View GitHub Repo" target="_blank">Bioactivity Prediction</a></strong><br>
+			<em>QSAR | RDKit, Feature Engineering, Scaffold CV, Model Ensembling</em><br>
+			Multi-task pipeline to predict molecular activity from SMILES using fingerprints and ensembles.
 		</li>
-		<li>
-			<strong><a href="https://github.com/netzema/Deep-Q-Learning-for-Continuous-Control" target="_blank">Deep Q-Learning</a></strong><br>
-			<em>Continuous Control | DQN, Replay Buffer, ε-Greedy</em><br>
-			Trained a pixel-based agent with DQN for high-reward convergence in continuous control tasks.
+		<li class="filter-item bio ml">
+			<strong><a href="https://github.com/netzema/Protein-Binding-Site-Prediction" title="View GitHub Repo" target="_blank">Protein Binding Site Prediction</a></strong><br>
+			<em>Classification | P2Rank, XGBoost, LightGBM, DBSCANg</em><br>
+			Feature-based ensemble model to predict binding residues in proteins, outperforming structure-only baselines.
 		</li>
-		<li><strong><a href="https://github.com/netzema/Learning-to-Walk-Again-with-PPO" target="_blank">Proximal Policy Optimization</a></strong><br><em>Continuous Control | PPO, Actor-Critic, GAE</em><br>Trained a BipedalWalker-v3 agent using PPO with GAE and reward shaping for stable walking.</li>
-		<li><strong><a href="https://github.com/netzema/Imitation-Learning-for-Deep-Reinforcement-Learning" target="_blank">Imitation Learning</a></strong><br><em>Deep Reinforcement Learning | Behavioral Cloning, DAgger, CNN, OpenAI Gym</em><br>Trained an agent to drive in CarRacing using expert demos and DAgger policy refinement.</li>
-		<li><strong>Audio Analysis</strong><br><em>Anomaly Detection | Auto-Encoders, Convolutional Neural Network, Python Dash</em><br>Heat Pump Anomaly Detection System Based on Audio Data</li>
-		<li><strong>Recommender Systems</strong><br><em>Multi-Label Classification | KNN, Random Forest, Neural Networks</em><br>Smart Recommender System for Real-World Configurator</li>
-		<li><strong>Financial Analytics</strong><br><em>Business Performance Visualization | Flask, AWS</em><br>Monthly Financial Insights Dashboard for Tracking Business & Economic Performance</li>
-		<li><strong>Predictive Analytics</strong><br><em>Order Intake Forecasting | Regression Models, Python Dash, AWS</em><br>Predictive Business Analytics Dashboard based on external industrial indicators</li>
-		<li><strong>Market Basket Analysis</strong><br><em>Cross-Selling Insights | Association Rules, R Shiny, AWS</em><br>Cross-Selling Analysis Using R Shiny and Association Rules</li>
-		<li><strong>Computer Vision</strong><br><em>Occlusion Removal | Convolutional Neural Networks</em><br>Enhanced Occlusion Removal Using Advanced Computer Vision Techniques</li>
-		<li><strong>Financial Modeling</strong><br><em>Stock Valuation | Machine Learning</em><br>Thesis on Value Investing with Machine Learning</li>
-		<li><strong>Network Analysis</strong><br><em>Visualization of Research Collaborations | Linear Algebra, Selenium, R Shiny, AWS</em><br>Network Analysis and Visualization of Partners in International Project Collaborations</li>
-		<li><strong><a href="https://github.com/netzema/Medical-Image-Processing-Tumor-Segmentation" target="_blank">Medical Imaging</a></strong><br><em>Tumor Classification and Segmentation | Fully Convolutional Networks</em><br>Automated Mammogram Analysis and Breast Cancer Detection</li>
-		<li><strong>Bioinformatics</strong><br><em>Differential Gene Expression Analysis | R</em><br>Pathway Analysis & Data Normalization of Mouse Embryos</li>
-		<li><strong>Natural Language Processing</strong><br><em>Recommender Systems | Matrix Factorization</em><br>Spotify Playlist Enrichment through Machine Learning</li>
-		<li><strong>Time Series Analysis</strong><br><em>Player Prediction | Long-Short-Term Memory</em><br>Professional Chess Player Prediction using LSTM</li>
+		<li class="filter-item xai">
+			<strong>Model Interpretability</strong><br>
+			<em>Explainable AI (XAI) | Latent space analysis, interactive Dash visualization</em><br>
+			Model Explanations for a Deep Feature Consistent Variational Autoencoder (DFC-VAE)
+		</li>
+		<li class="filter-item ml xai">
+			<strong>Climate Pattern Detection</strong><br>
+			<em>Unsupervised learning | UMAP, t-SNE, NASA POWER API, ReliefWeb API</em><br>
+			AI Visualization of Latent Space to Detect Worldwide Weather Clusters and Patterns
+		</li>
+		<li class="filter-item bio ml"><strong><a href="https://github.com/netzema/Molecular-Generation-from-SMILES" title="View GitHub Repo" target="_blank">Molecular Generation</a></strong><br><em>Generative Modeling | LSTM, SMILES, Fréchet ChemNet Distance</em><br>Autoregressive LSTM model trained on SMILES to generate valid, unique, and novel molecules.</li>
+		<li class="filter-item rl"><strong><a href="https://github.com/netzema/Deep-Q-Learning-for-Continuous-Control" title="View GitHub Repo" target="_blank">Deep Q-Learning</a></strong><br><em>Continuous Control | DQN, Replay Buffer, ε-Greedy</em><br>Trained a pixel-based agent with DQN for high-reward convergence in continuous control tasks.</li>
+		<li class="filter-item rl"><strong><a href="https://github.com/netzema/Learning-to-Walk-Again-with-PPO" title="View GitHub Repo" target="_blank">Proximal Policy Optimization</a></strong><br><em>Continuous Control | PPO, Actor-Critic, GAE</em><br>Trained a BipedalWalker-v3 agent using PPO with GAE and reward shaping for stable walking.</li>
+		<li class="filter-item rl"><strong><a href="https://github.com/netzema/Imitation-Learning-for-Deep-Reinforcement-Learning" title="View GitHub Repo" target="_blank">Imitation Learning</a></strong><br><em>Deep Reinforcement Learning | Behavioral Cloning, DAgger, CNN, OpenAI Gym</em><br>Trained an agent to drive in CarRacing using expert demos and DAgger policy refinement.</li>
+		<li class="filter-item ml infra"><strong>Financial Analytics</strong><br><em>Business Performance Visualization | Flask, AWS</em><br>Monthly Financial Insights Dashboard for Tracking Business & Economic Performance</li>
+		<li class="filter-item mlinfra"><strong>Predictive Analytics</strong><br><em>Order Intake Forecasting | Regression Models, Python Dash, AWS</em><br>Predictive Business Analytics Dashboard based on external industrial indicators</li>
+		<li class="filter-item ml infra"><strong>Market Basket Analysis</strong><br><em>Cross-Selling Insights | Association Rules, R Shiny, AWS</em><br>Cross-Selling Analysis Using R Shiny and Association Rules</li>
+		<li class="filter-item ml"><strong>Computer Vision</strong><br><em>Occlusion Removal | Convolutional Neural Networks</em><br>Enhanced Occlusion Removal Using Advanced Computer Vision Techniques</li>
+		<li class="filter-item ml infra"><strong>Financial Modeling</strong><br><em>Stock Valuation | Machine Learning</em><br>Thesis on Value Investing with Machine Learning</li>
+		<li class="filter-item xai infra"><strong>Network Analysis</strong><br><em>Visualization of Research Collaborations | Linear Algebra, Selenium, R Shiny, AWS</em><br>Network Analysis and Visualization of Partners in International Project Collaborations</li>
+		<li class="filter-item bio"><strong><a href="https://github.com/netzema/Medical-Image-Processing-Tumor-Segmentation" title="View GitHub Repo" target="_blank">Medical Imaging</a></strong><br><em>Tumor Classification and Segmentation | Fully Convolutional Networks</em><br>Automated Mammogram Analysis and Breast Cancer Detection</li>
+		<li class="filter-item bio"><strong>Bioinformatics</strong><br><em>Differential Gene Expression Analysis | R</em><br>Pathway Analysis & Data Normalization of Mouse Embryos</li>
+		<li class="filter-item ml"><strong>Natural Language Processing</strong><br><em>Recommender Systems | Matrix Factorization</em><br>Spotify Playlist Enrichment through Machine Learning</li>
+		<li class="filter-item ml"><strong>Time Series Analysis</strong><br><em>Player Prediction | Long-Short-Term Memory</em><br>Professional Chess Player Prediction using LSTM</li>
 		</ul>
 	</div>
 	</div>
+
+	<script>
+	const buttons = document.querySelectorAll('#project-filters button');
+	const items = document.querySelectorAll('.filter-item');
+
+	buttons.forEach(button => {
+		button.addEventListener('click', () => {
+		const filter = button.getAttribute('data-filter');
+		items.forEach(item => {
+			const show = filter === 'all' || item.classList.contains(filter);
+			item.style.display = show ? 'list-item' : 'none';
+		});
+		});
+	});
+	</script>
+
 
 	<!-- Test Scores -->
 	<div class="skills section second" id="test_scores">
@@ -339,10 +372,10 @@
 				<div class="unit-50">
 					<p>Let's Connect!</p>
 					<p>Feel free to reach out - whether it's about AI, community projects, or just a good conversation.</p>
-					<a href="/rss.xml" class="btn-cv" target="_blank", title="RSS Feed">
+					<a href="/rss.xml" class="btn-cv" title="View GitHub Repo" target="_blank", title="RSS Feed">
 						<i class="fa fa-rss"></i> Subscribe via RSS
 					</a>
-					<a href="https://danielnetzl.substack.com" class="btn-cv" target="_blank">
+					<a href="https://danielnetzl.substack.com" class="btn-cv" title="View GitHub Repo" target="_blank">
 						<i class="fa fa-pencil"></i> Read on Substack
 					</a>
 				</div>

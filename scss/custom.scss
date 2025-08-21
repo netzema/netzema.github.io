@@ -195,3 +195,22 @@ footer {
     }
   }
 }
+
+#project-filters button {
+  background-color: lighten($secondary, 60%);
+  border: none;
+  color: $primary;
+  font-size: em(14);
+  font-weight: 600;
+  padding: 8px 16px;
+  margin: 5px 6px 15px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#project-filters button:hover,
+#project-filters button.active {
+  background-color: $primary;
+  color: #fff;
+}
