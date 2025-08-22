@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /*.json$
+Disallow: /data/
+Disallow: /now.html
+Allow: /
+Sitemap: https://danielnetzl.com/sitemap.xml

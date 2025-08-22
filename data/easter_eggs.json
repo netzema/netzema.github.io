@@ -1,0 +1,14 @@
+[
+  {
+    "title": "High-Speed HTTP Automation",
+    "tags": "Infra, HTTP, Automation",
+    "tools": "Raw HTTP Requests | Session Spoofing | Tor Routing | Linux Deployment",
+    "description": "Built a highly efficient headless automation system for interacting with a web-based API via direct HTTP requests. Deployed on a self-hosted server with IP cycling."
+  },
+  {
+    "title": "Large-Scale Email Automation",
+    "tags": "Automation, Web, Email",
+    "tools": "Email Validation | Address Spoofing | Form Automation | Rate-Limiting Bypass",
+    "description": "Engineered an automated pipeline to simulate high-volume email registrations across constrained web forms. Focused on reliable delivery, error handling, and adaptive throttling."
+  }
+]

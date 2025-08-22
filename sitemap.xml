@@ -6,59 +6,62 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<url>
-  <loc>https://danielnetzl.com/</loc>
-  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
-</url>
-<url>
-  <loc>https://danielnetzl.com/#about</loc>
-  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
-</url>
-<url>
-  <loc>https://danielnetzl.com/#education</loc>
-  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
-</url>
-<url>
-  <loc>https://danielnetzl.com/#experience</loc>
-  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
-</url>
-<url>
-  <loc>https://danielnetzl.com/#projects</loc>
-  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
-</url>
-<url>
-  <loc>https://danielnetzl.com/#community</loc>
-  <lastmod>2025-02-08T09:05:48+00:00</lastmod>
-</url>
-<url>
-  <loc>https://danielnetzl.com/#essays</loc>
-  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
-</url>
 
 <url>
   <loc>https://danielnetzl.com/</loc>
-  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
+  <lastmod>2025-08-22T09:00:25+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://danielnetzl.com/essays/myth_of_progress.html</loc>
-  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
+  <loc>https://danielnetzl.com/downloads/Daniel_Netzl_CV.pdf</loc>
+  <lastmod>2025-08-22T09:00:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://danielnetzl.com/essays/inequalities_in_ai_development.html</loc>
-  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
+  <loc>https://danielnetzl.com/essays/the-west-rewritten/</loc>
+  <lastmod>2025-08-22T09:00:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://danielnetzl.com/essays/rethinking_progress.html</loc>
-  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
+  <loc>https://danielnetzl.com/essays/bars_of_our_cage/</loc>
+  <lastmod>2025-08-22T09:00:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://danielnetzl.com/index.html</loc>
-  <lastmod>2025-02-08T16:56:45+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://danielnetzl.com/essays/addictive_algorithms/</loc>
+  <lastmod>2025-08-22T09:00:25+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://danielnetzl.com/essays/fear_of_limits/</loc>
+  <lastmod>2025-08-22T09:00:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://danielnetzl.com/essays/the_lost_ark/</loc>
+  <lastmod>2025-08-22T09:00:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://danielnetzl.com/essays/a_world_too_much/</loc>
+  <lastmod>2025-08-22T09:00:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://danielnetzl.com/essays/myth_of_progress/</loc>
+  <lastmod>2025-08-22T09:00:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://danielnetzl.com/essays/inequalities_in_ai_development/</loc>
+  <lastmod>2025-08-22T09:00:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://danielnetzl.com/essays/rethinking_progress/</loc>
+  <lastmod>2025-08-22T09:00:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
 
 </urlset>

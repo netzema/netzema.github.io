@@ -65,3 +65,15 @@ figcaption {
   border-color: #4e4e4e;
   box-shadow: inset 0 0 0 1px #b3b3b3;
 }
+
+.hidden-projects {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.6s ease, max-height 0.6s ease;
+}
+
+.hidden-projects.visible {
+  opacity: 1;
+  max-height: 1000px; /* sufficiently large for content */
+}

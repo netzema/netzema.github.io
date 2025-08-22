@@ -294,6 +294,9 @@
 		<li class="filter-item ml"><strong>Natural Language Processing</strong><br><em>Recommender Systems | Matrix Factorization</em><br>Spotify Playlist Enrichment through Machine Learning</li>
 		<li class="filter-item ml"><strong>Time Series Analysis</strong><br><em>Player Prediction | Long-Short-Term Memory</em><br>Professional Chess Player Prediction using LSTM</li>
 		</ul>
+
+		<div class="hidden-projects" id="easter-egg-projects"></div>
+
 	</div>
 	</div>
 
@@ -429,6 +432,46 @@
 				});
 			});
 			});
+		});
+	</script>
+
+	<script>
+		function loadEasterEggs() {
+			fetch("data/easter_eggs.json")
+			.then(response => response.json())
+			.then(data => {
+				const container = document.getElementById("easter-egg-projects");
+				if (container.innerHTML.trim() === "") {
+				let html = "<h2>Curious minds find hidden things...</h2><ul class='project-list compact'>";
+				data.forEach(project => {
+					html += `
+					<li>
+						<strong>${project.title}</strong><br>
+						<em>${project.tools}</em><br>
+						${project.description}
+					</li>`;
+				});
+				html += "</ul>";
+				container.innerHTML = html;
+				}
+				container.classList.add("visible");
+			});
+		}
+
+		document.addEventListener('keydown', function(e) {
+			if (e.shiftKey && e.key === 'D') {
+			const container = document.getElementById("easter-egg-projects");
+
+			if (container.classList.contains("visible")) {
+				container.classList.remove("visible");
+			} else {
+				if (container.innerHTML.trim() === "") {
+				loadEasterEggs();
+				} else {
+				container.classList.add("visible");
+				}
+			}
+			}
 		});
 	</script>
 </body>
