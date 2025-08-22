@@ -232,14 +232,14 @@
 			Fully automated audio monitoring system: collects microphone data, converts audio to images, runs CNN anomaly detection with model explainability, and alerts subscribers via live Dash web interface and automated email notifications.
 		</li>
 		<li class="filter-item bio ml">
-			<strong><a href="https://github.com/netzema/Retrosynthesis-with-Fine-Tuned-Transformer-Models" title="View GitHub Repo" target="_blank">Retrosynthesis Prediction</a></strong><br>
-			<em>Seq2Seq Modeling | Transformer, ReactionT5, Fine-Tuning</em><br>
-			Fine-tuned a chemical language model to predict reactants from product SMILES in single-step retrosynthesis.
+		<strong><a href="https://github.com/netzema/Retrosynthesis-with-Fine-Tuned-Transformer-Models" title="View GitHub Repo" target="_blank">Retrosynthesis Prediction</a></strong><br>
+		<em>Seq2Seq Modeling | Transformer, ReactionT5, Fine-Tuning</em><br>
+		Fine-tuned a domain-specific variant of Google's T5 transformer on retrosynthesis data to predict plausible chemical reactants from product SMILES. The model was trained using Seq2Seq learning with beam search and customized hyperparameters, treating molecules as a chemical language.
 		</li>
-		<li class="filter-item rl">
+		<li class="filter-item rl ml">
 			<strong><a href="https://github.com/netzema/Deep-Reinforcement-Learning-for-Doom" title="View GitHub Repo" target="_blank">Deep Reinforcement Learning for FPS</a></strong><br>
-			<em>Combat Strategy Learning | Dueling DQN, VizDoom, Custom Rewards</em><br>
-			Trained an agent in Doom with movement-augmented rewards and depth-aware Q-learning.
+			<em>Combat Strategy Learning | Dueling DQN, VizDoom, Reward Shaping, Depth-Aware Q-Learning</em><br>
+			Trained a Dueling DQN agent in a multi-bot Doom environment using grayscale + depth inputs. Designed a custom reward function to balance movement, accuracy, and survival, preventing local optima and encouraging strategic play. Used EMA-target networks, replay buffers, and Q-value analysis to refine learning.
 		</li>
 		<li class="filter-item infra ml">
 		<strong><a href="https://github.com/netzema/ticketing_system" title="View GitHub Repo" target="_blank">Ticketing System</a></strong><br>
@@ -250,6 +250,11 @@
 			<strong>Industrial Configuration Recommender</strong><br>
 			<em>Multi-Label Classification | Random Forest, Neural Networks, Postprocessing Pipelines</em><br>
 			Built a scalable recommendation system for medical device configurations. Optimized preprocessing and postprocessing to handle sparse high-dimensional data for reliable, explainable, and fast predictions in real-world industrial settings.
+		</li>
+		<li class="filter-item ml xai">
+			<strong>Multi-Focus Occlusion Removal</strong><br>
+			<em>Deep Learning Architecture | CNN, SE Blocks, Upsampling, Custom MFOR Model</em><br>
+			Developed a deep CNN-based occlusion removal model (MFOR) using multi-focus image stacks. Included attention-enhanced skip connections and squeeze-and-excitation blocks to reconstruct occluded scenes with high PSNR. Managed 200k+ images and trained under hardware constraints for deployment in search-and-rescue imaging scenarios.
 		</li>
 		</ul>
 
@@ -273,16 +278,15 @@
 		<li class="filter-item ml xai">
 			<strong>Climate Pattern Detection</strong><br>
 			<em>Unsupervised learning | UMAP, t-SNE, NASA POWER API, ReliefWeb API</em><br>
-			AI Visualization of Latent Space to Detect Worldwide Weather Clusters and Patterns
+			AI visualization of latent space to detect worldwide weather clusters and patterns
 		</li>
 		<li class="filter-item bio ml"><strong><a href="https://github.com/netzema/Molecular-Generation-from-SMILES" title="View GitHub Repo" target="_blank">Molecular Generation</a></strong><br><em>Generative Modeling | LSTM, SMILES, Fréchet ChemNet Distance</em><br>Autoregressive LSTM model trained on SMILES to generate valid, unique, and novel molecules.</li>
 		<li class="filter-item rl"><strong><a href="https://github.com/netzema/Deep-Q-Learning-for-Continuous-Control" title="View GitHub Repo" target="_blank">Deep Q-Learning</a></strong><br><em>Continuous Control | DQN, Replay Buffer, ε-Greedy</em><br>Trained a pixel-based agent with DQN for high-reward convergence in continuous control tasks.</li>
 		<li class="filter-item rl"><strong><a href="https://github.com/netzema/Learning-to-Walk-Again-with-PPO" title="View GitHub Repo" target="_blank">Proximal Policy Optimization</a></strong><br><em>Continuous Control | PPO, Actor-Critic, GAE</em><br>Trained a BipedalWalker-v3 agent using PPO with GAE and reward shaping for stable walking.</li>
 		<li class="filter-item rl"><strong><a href="https://github.com/netzema/Imitation-Learning-for-Deep-Reinforcement-Learning" title="View GitHub Repo" target="_blank">Imitation Learning</a></strong><br><em>Deep Reinforcement Learning | Behavioral Cloning, DAgger, CNN, OpenAI Gym</em><br>Trained an agent to drive in CarRacing using expert demos and DAgger policy refinement.</li>
-		<li class="filter-item ml infra"><strong>Financial Analytics</strong><br><em>Business Performance Visualization | Flask, AWS</em><br>Monthly Financial Insights Dashboard for Tracking Business & Economic Performance</li>
-		<li class="filter-item mlinfra"><strong>Predictive Analytics</strong><br><em>Order Intake Forecasting | Regression Models, Python Dash, AWS</em><br>Predictive Business Analytics Dashboard based on external industrial indicators</li>
-		<li class="filter-item ml infra"><strong>Market Basket Analysis</strong><br><em>Cross-Selling Insights | Association Rules, R Shiny, AWS</em><br>Cross-Selling Analysis Using R Shiny and Association Rules</li>
-		<li class="filter-item ml"><strong>Computer Vision</strong><br><em>Occlusion Removal | Convolutional Neural Networks</em><br>Enhanced Occlusion Removal Using Advanced Computer Vision Techniques</li>
+		<li class="filter-item ml infra"><strong>Financial Analytics</strong><br><em>Business Performance Visualization | Flask, AWS</em><br>Monthly financial insights dashboard for tracking business & economic performance</li>
+		<li class="filter-item mlinfra"><strong>Predictive Analytics</strong><br><em>Order Intake Forecasting | Regression Models, Python Dash, AWS</em><br>Predictive business analytics dashboard based on external industrial indicators</li>
+		<li class="filter-item ml infra"><strong>Market Basket Analysis</strong><br><em>Cross-Selling Insights | Association Rules, R Shiny, AWS</em><br>Cross-selling analysis using R Shiny and Association Rules</li>
 		<li class="filter-item ml infra"><strong>Financial Modeling</strong><br><em>Stock Valuation | Machine Learning</em><br>Thesis on Value Investing with Machine Learning</li>
 		<li class="filter-item xai infra"><strong>Network Analysis</strong><br><em>Visualization of Research Collaborations | Linear Algebra, Selenium, R Shiny, AWS</em><br>Network Analysis and Visualization of Partners in International Project Collaborations</li>
 		<li class="filter-item bio"><strong><a href="https://github.com/netzema/Medical-Image-Processing-Tumor-Segmentation" title="View GitHub Repo" target="_blank">Medical Imaging</a></strong><br><em>Tumor Classification and Segmentation | Fully Convolutional Networks</em><br>Automated Mammogram Analysis and Breast Cancer Detection</li>
