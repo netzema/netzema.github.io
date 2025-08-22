@@ -2,5 +2,7 @@ User-agent: *
 Disallow: /*.json$
 Disallow: /data/
 Disallow: /now.html
+Disallow: /downloads/
+Disallow: /*.pdf
 Allow: /
 Sitemap: https://danielnetzl.com/sitemap.xml
