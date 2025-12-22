@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Winterzauber ✨</title>
+
+  <link rel="stylesheet" href="./gift.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+  <div class="overlay" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <section class="card" id="app" aria-live="polite">
+      <!-- Screen: Welcome -->
+      <div class="screen active" data-screen="welcome">
+        <h1>Winterzauber 🎄✨</h1>
+        <p>
+          Du hast <strong>3 Fragen</strong>. Wenn du sie richtig beantwortest,
+          wartet am Ende etwas auf dich.
+        </p>
+        <p class="small">
+          Tipp: Groß-/Kleinschreibung ist egal. Bei Datum gehen mehrere Schreibweisen.
+        </p>
+        <button class="btn primary" id="startBtn">Los geht's 💛</button>
+      </div>
+
+      <!-- Screen: Quiz -->
+      <div class="screen" data-screen="quiz">
+        <div class="progress">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <p class="counter" id="counter">Frage 1/3</p>
+        <h2 id="questionText">Frage</h2>
+
+        <form id="answerForm" autocomplete="off">
+          <input
+            id="answerInput"
+            class="input"
+            type="text"
+            inputmode="text"
+            placeholder="Deine Antwort…"
+            aria-label="Antwort"
+            required
+          />
+          <div class="row">
+            <button class="btn" type="button" id="backBtn">Zurück</button>
+            <button class="btn primary" type="submit" id="nextBtn">Weiter</button>
+          </div>
+          <p class="hint" id="hint"></p>
+        </form>
+      </div>
+
+      <!-- Screen: Success -->
+      <div class="screen" data-screen="success">
+        <div class="confetti" aria-hidden="true"></div>
+        <h1>Geschafft! 🥰</h1>
+        <p>
+          Okay… jetzt kommt mein Teil. Drück auf Play.
+        </p>
+
+        <div class="player">
+          <audio id="audio" controls preload="metadata">
+            <source src="./Winterzauber.mp3" type="audio/mpeg" />
+            Dein Browser unterstützt leider kein Audio-Playback.
+          </audio>
+          <p class="small">
+            (Falls es nicht lädt: Seite kurz neu laden.)
+          </p>
+        </div>
+
+        <div id="lyricsWrap" class="lyrics hidden">
+        <h3>Songtext 💛</h3>
+            <pre class="lyrics-text">
+[Strophe 1]
+Ich konsumiere zu viel Kekse, nein das ist nicht gesund
+Dennoch, du an meiner Seite, und schon läuft alles rund
+Ich schaue aus dem Fenster, und verspüre den Duft,
+Und höre dir zu, wie du ein Weihnachtslied summst
+D-Draußen liegt der Schnee und der Nebel verdeckt die Sicht
+Das ist ein guter Tag für eine kleine Weihnachtsg'schicht'
+Wir machen's uns gemütlich und es ist klar, dass du neben mir sitzt
+Ich les dir schön was vor, doch du bist längst eingenickt
+
+
+[Refrain]
+Der Winterzauber ist da, und die Liebe zu dir so klar
+Ich streich dir durch dein Haar, und du nimmst mich ganz fest in' Arm, ja
+Der Winterzauber ist da, ich genieße jeden Tag
+Manchmal denk ich nach und kann nicht fassen, was ich hab 
+
+
+[Strophe 2]
+Zusammen unter einer Decke, kuscheln und um vier wird es Nacht,
+und ein heißer Tee in deiner Hand ist, was glücklich macht
+Wie im Flug vergehen die Tage, an denen du herzhaft lachst
+Es ist so schön, wie schnell die Liebe kam,
+und sie lässt nicht nach
+Ich merke, wie die Zeit verrennt
+wir verstehen uns echt wie Paare, die sich Jahre lang kenn
+ich lieb's, wenn ich dir Sticker send'
+und wieder zu spüren, wie die Liebe in mir brennt
+
+[Refrain]
+Der Winterzauber ist da, und die Liebe zu dir so klar
+Ich streich dir durch dein Haar, und du nimmst mich ganz fest in' Arm, ja
+Der Winterzauber ist da, ich genieße jeden Tag
+Manchmal denk ich nach und kann nicht fassen, was ich hab 
+
+[Outro]
+Manchmal denk ich nach und kann nicht fassen, was ich hab 
+Du streichst mir durch mein Haar, und ich nehm dich ganz fest in' Arm
+
+            </pre>
+        </div>
+
+
+        <p class="small">
+          Frohe Weihnachten 🎄<br/>
+          <span class="signature">— von mir für dich</span>
+        </p>
+
+        <div class="row">
+          <button class="btn" id="restartBtn" type="button">Nochmal spielen</button>
+          <a class="btn primary" href="/" id="homeLink">Zurück zur Seite</a>
+        </div>
+      </div>
+
+      <!-- Screen: Fail (optional gentle) -->
+      <div class="screen" data-screen="fail">
+        <h1>Fast 😄</h1>
+        <p>
+          Das war knapp. Probier's nochmal — du packst das.
+        </p>
+        <button class="btn primary" id="tryAgainBtn" type="button">Nochmal</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="small muted">Pssst… diese Seite ist nur für dich.</span>
+    </footer>
+  </main>
+
+  <script src="./gift.js"></script>
+</body>
+</html>
