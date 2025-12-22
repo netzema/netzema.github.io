@@ -36,7 +36,7 @@ const QUESTIONS = [
       const d = normalizeDate(answer);
       return d === "13.04.2025";
     },
-    wrongHint: "Kleiner Tipp: Tag.Monat.Jahr 😉"
+    wrongHint: "Kleiner Tipp: DD.MM.YYYY 😉"
   },
   {
     q: "Was ist die erfolgreichste Form des Fundraisings?",
@@ -72,7 +72,7 @@ const QUESTIONS = [
 
       return okPhrases.some(p => a.includes(p));
     },
-    wrongHint: "Das machen wir doch quasi jeden Tag 😄"
+    wrongHint: "Denk' an Reinis Vortrag in meiner Arbeit 😄"
   },
   {
     q: "Welche Band sehen wir uns am 12. März 2026 gemeinsam an?",
@@ -203,3 +203,18 @@ document.addEventListener("DOMContentLoaded", () => {
     lyricsWrap.classList.remove("hidden");
   }, { once: true });
 });
+
+function wireVinylToAudio() {
+  const audio = document.getElementById("audio");
+  const vinyl = document.getElementById("vinyl");
+  if (!audio || !vinyl) return;
+
+  const startSpin = () => vinyl.classList.add("spinning");
+  const stopSpin  = () => vinyl.classList.remove("spinning");
+
+  audio.addEventListener("play", startSpin);
+  audio.addEventListener("pause", stopSpin);
+  audio.addEventListener("ended", stopSpin);
+}
+
+document.addEventListener("DOMContentLoaded", wireVinylToAudio);
