@@ -3,6 +3,7 @@ Disallow: /*.json$
 Disallow: /data/
 Disallow: /now.html
 Disallow: /downloads/
+Disallow: /winterzauber-2025/
 Disallow: /*.pdf
 Allow: /
 Sitemap: https://danielnetzl.com/sitemap.xml
